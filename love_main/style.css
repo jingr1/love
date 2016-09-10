@@ -732,6 +732,12 @@ h3 {
     margin-bottom: .857em;
     margin-top: .857em;
 }
+h3.name {
+    margin-top: 20px;
+    font-size: 2.250em;
+    font-family: 'Great Vibes', 'STXingkai', 'PT Sans', sans-serif;
+    display: block;
+}
 
 h4 {
     font-size: 1.500em; /* = 24px */

@@ -1,0 +1,155 @@
+/* Header Menu (Primary)
+-------------------------------------------------------------- */
+#header .menu {
+    z-index: 9999;
+    font-size: 1em;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 30px;
+    margin: 20px 0 0 0;
+    display: block;
+}
+
+#header .menu a {
+    -moz-transition-property: none;
+    -webkit-transition-property: none;
+    -o-transition-property: none;
+    -ms-transition-property: none;
+    transition-property: none;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 1px;
+    padding: 0 0.6em;
+    position: relative;
+    text-decoration: none;
+    color: #777;
+    border-bottom: 1px solid transparent;
+}
+#header .menu a:hover  {
+    border-color: #c17e93;
+}
+
+#header .menu a:active,
+#header .menu a:hover,
+#header .menu .current_page_item > a,
+#header .menu .current-menu-item > a,
+#header .home .menu .current_page_item > a    {
+    color: #c17e93;
+    margin: 2px 1px 1px 1px;
+}
+
+#header .menu .current_page_ancestor > a,
+#header .menu .current_page_parent > a   {
+    margin: 2px 1px 1px 1px;
+}
+
+#header .menu-sel a {
+    margin: 2px 1px 1px 1px;
+}
+
+#header .menu ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    position: absolute;
+    top: 30px;
+    visibility: hidden;
+    z-index: 10;
+    width: auto;
+    min-width: 9em;
+}
+
+#header .menu ul:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#header .menu,
+#header .menu ul {
+    min-height: 0;
+}
+
+#header .menu ul,
+#header .menu ul ul,
+#header .menu .sub-menu {
+    margin: 0;
+    padding: 0;
+    background: #f2e2da;
+}
+
+#header .menu li {
+    border: 0;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 5;
+}
+
+#header .menu li:hover {
+    white-space: normal;
+    z-index: 10000;
+}
+
+#header .menu li:hover > ul {
+    visibility: visible;
+}
+
+#header .menu li li {
+    text-align: left;
+    display: block;
+    font-size: 0.9em;
+}
+
+#header .menu li li:hover > ul {
+    left: 100%;
+    top: 0;
+}
+
+#header .menu-sel ul li a {
+    color: #777;
+}
+
+#header .menu li > a:after {
+    color: rgb(154, 138, 190);
+    content: '\0020 \25BE';
+}
+
+#header .menu li > a:hover:after {
+    color: rgb(171, 157, 187);
+    content: '\0020 \25BE';
+}
+
+#header .menu li > a:only-child:after {
+    content: '';
+}
+
+#header .menu li li {
+    color: #7b7b7b;
+    margin: -1px 0 0;
+    width: auto;
+}
+
+#header .menu li li a {
+    color: #777;
+    height: auto;
+    line-height: 1em;
+    padding: 1em;
+}
+
+#header .menu li li > a {
+    font-size: 0.9em;
+}
+
+#header .menu li li:hover > ul {
+    left: 100%;
+    top: 0;
+}
