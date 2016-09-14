@@ -58,7 +58,7 @@ function startHeartAnimation() {
             b.push(h);
             garden.createRandomBloom(h[0], h[1])
         }
-        if (d >= 30) {
+        if (d >= 100) {
             clearInterval(a);
             showMessages()
         } else {
@@ -126,5 +126,5 @@ function adjustCodePosition() {
     $("#code").css("margin-top", ($("#garden").height() - $("#code").height()) / 2)
 }
 function showLoveU() {
-    $("#loveu").fadeIn(3000)
+    $("#loveu").fadeIn(300)
 };
