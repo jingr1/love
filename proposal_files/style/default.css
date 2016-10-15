@@ -90,10 +90,12 @@
 	color:#3f7f5f
 }
 #copyright {
-	margin-top:20px;
+	margin-top:12px;
 	text-align:center;
 	width:100%;
-	color:#666
+	color:#a21850;
+  font-size:24px;
+  font-weight:bold;
 }
 #errorMsg {
 	width:100%;
